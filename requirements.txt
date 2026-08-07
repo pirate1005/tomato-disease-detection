@@ -2,8 +2,7 @@
 
 streamlit>=1.37,<2.0
 streamlit-webrtc==0.76.2
-ultralytics==8.3.185
-opencv-python-headless==4.10.0.84
+ultralytics-opencv-headless==8.4.103
 numpy==2.1.1
 torch==2.4.1+cpu
 torchvision==0.19.1+cpu
