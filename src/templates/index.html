@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deteksi Penyakit Tomat</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <div class="hero">
+        <h1>🍅 Sistem Deteksi Penyakit Tanaman Tomat</h1>
+        <p>Deteksi realtime menggunakan YOLOv11 berbasis webcam</p>
+    </div>
+
+    <!-- MAIN -->
+    <div class="main-layout">
+
+        <!-- LEFT -->
+        <div class="card webcam-card">
+            <h2>📷 Kamera Realtime</h2>
+
+            <div class="video-wrapper">
+                <img src="{{ url_for('video_feed') }}" id="video-stream">
+            </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="card right-panel">
+
+            <!-- HASIL DETEKSI -->
+            <div class="result-box">
+                <h2>📋 Hasil Deteksi</h2>
+                <div class="result-info">
+                    <div class="result-item">
+                        <span class="label">Penyakit / Kondisi</span>
+                        <span id="detection-label">Menunggu deteksi...</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="label">Confidence</span>
+                        <span id="detection-confidence">0%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- METRICS -->
+            <div class="metrics-box">
+                <h2>📊 Evaluasi Model YOLOv11</h2>
+
+                <div class="metric-grid">
+                    <div class="metric-item">
+                        <h3>Precision</h3>
+                        <p id="precision-value">-</p>
+                    </div>
+
+                    <div class="metric-item">
+                        <h3>Recall</h3>
+                        <p id="recall-value">-</p>
+                    </div>
+
+                    <div class="metric-item">
+                        <h3>mAP50</h3>
+                        <p id="map50-value">-</p>
+                    </div>
+
+                    <div class="metric-item">
+                        <h3>mAP50-95</h3>
+                        <p id="map5095-value">-</p>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button id="save-btn">💾 Simpan Hasil</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- STATUS -->
+    <div class="card status-box">
+        <h2>🟢 Status Sistem</h2>
+        <p>Model aktif - webcam realtime berjalan</p>
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

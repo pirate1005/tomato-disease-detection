@@ -1,0 +1,12 @@
+Dataset,class_id,class_name,IoU,Precision,Recall,mAP50,mAP50-95,matched_objects,IoU_status,Precision_status,Recall_status,mAP50_status,mAP50-95_status
+test,0,bacterial_spot_leaf,0.9582613706588745,0.9379409237871635,0.8461538461538461,0.8900675675675676,0.840026173901174,34,Tercapai,Tercapai,Belum tercapai,Belum tercapai,Belum tercapai
+test,1,early_blight_leaf,0.9521825313568115,1.0,0.7615809089859418,0.9240474631751228,0.8740731871659684,44,Tercapai,Tercapai,Belum tercapai,Tercapai,Belum tercapai
+test,2,healthy_leaf,0.949686586856842,0.9316133652553424,0.9565217391304348,0.9751818221860844,0.9209558248533372,44,Tercapai,Tercapai,Tercapai,Tercapai,Tercapai
+test,3,late_blight_leaf,0.9743857383728027,0.9252002532291387,0.9051090674454261,0.9213414634146342,0.9145092818428184,37,Tercapai,Tercapai,Tercapai,Tercapai,Tercapai
+test,4,mosaic_virus,0.9473475813865662,0.9302753980731887,0.9530824376337578,0.972904727124024,0.9150906855866158,55,Tercapai,Tercapai,Tercapai,Tercapai,Tercapai
+test,5,septoria_leaf_spot,0.9733726978302002,0.9445649748541907,0.9375,0.9546989247311828,0.9285225806451611,30,Tercapai,Tercapai,Tercapai,Tercapai,Tercapai
+test,6,bacterial_spot_fruit,0.9780867099761963,0.9617638384789406,0.96875,0.9932352941176471,0.9837428842504744,31,Tercapai,Tercapai,Tercapai,Tercapai,Tercapai
+test,7,blossom_end_rot,0.9835554361343384,0.9943998754554576,1.0,0.995,0.9890000000000001,30,Tercapai,Tercapai,Tercapai,Tercapai,Tercapai
+test,8,catface,0.9831815361976624,0.9877364954076133,1.0,0.995,0.9949999999999999,30,Tercapai,Tercapai,Tercapai,Tercapai,Tercapai
+test,9,healthy_fruit,0.9642390012741089,0.9639781999323395,1.0,0.9903846153846156,0.9666904942256386,38,Tercapai,Tercapai,Tercapai,Tercapai,Tercapai
+test,10,serangan_hama,0.9606229066848755,1.0,0.9215384276915304,0.965,0.9369808429118773,28,Tercapai,Tercapai,Tercapai,Tercapai,Tercapai

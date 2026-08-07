@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# Environment
+.env
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# Database
+*.db
+*.sqlite3
+
+# Logs
+*.log
+
+# Upload folder
+src/static/uploads/*
+!src/static/uploads/.gitkeep
+
+# File besar yang tidak perlu di GitHub
+*.zip
+*.ipynb
+models/last.pt
+
+# File sistem
+Thumbs.db
+Desktop.ini
+.DS_Store
